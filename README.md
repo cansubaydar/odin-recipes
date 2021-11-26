@@ -10,7 +10,7 @@ Recipes and Images by [Chef John](https://www.allrecipes.com/cook/foodwisheswith
 
 #### The steps I followed for the recipe website:
 
--Initial structure
+- Initial structure
     - Created `odin-recipes` directory and added index page within it
     -  Filled it out with the usual boilerplate HTML and added an h1 heading “Odin Recipes” to the body
 - Recipe Page 
