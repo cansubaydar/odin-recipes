@@ -31,10 +31,16 @@ a {
     color: #fff;
 }
 
+@media all and (max-width: 32em) { 
+    .home h1 {
+        font-size: 3em;
+    }
+}
+
 .home ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 55%;
     position: relative;
@@ -57,6 +63,23 @@ a {
 .home ul li { 
     list-style: none;
     font-size: 1.3em;
+    padding: 1.5em 0;
+}
+
+@media all and (max-width: 32em) { 
+    .home ul {
+        border: transparent;
+        border-top: 2px solid rgb(12, 10, 14);
+        border-bottom: 2px solid rgb(12, 10, 14);
+    }
+    .home ul::before {
+        display: none;
+    }
+    .home ul li {
+        text-align: center;
+        padding: 1em 0;
+        font-size: 1.1em;
+    }
 }
 
 .home ul li a {
