@@ -26,3 +26,6 @@ Recipes and Images by [Chef John](https://www.allrecipes.com/cook/foodwisheswith
     - Added recipe preparation info with icons to the top of the ingredients
     - Added Chef's notes under the steps 
     - Added homepage and next recipe buttons at the bottom of recipe pages 
+
+
+Update: Added CSS file and made it responsive.
