@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'KoHo', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(12, 10, 14);
+}
+
+a {
+    color: rgb(12, 10, 14);
+}
+
+/* Homepage */
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cc9543;
+}
+
+.home h1 {
+    font-size: 4em;
+    color: #fff;
+}
+
+.home ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 55%;
+    position: relative;
+    background-color: #fff;
+    padding: 3em;
+    z-index: 2;
+}
+
+.home ul::before {
+    content: '';
+    border: 2px solid rgb(12, 10, 14);
+    position: absolute;
+    right: -1em;
+    top: 0.5em;
+    left: 1em;
+    bottom: -0.5em;
+    z-index: -1;
+}
+
+.home ul li { 
+    list-style: none;
+    font-size: 1.3em;
+}
+
+.home ul li a {
+    text-decoration: none;
+}
+
+.home ul li a:hover {
+    color: #855713;
+}
+
+/*  Recipe Pages  */
+.recipe-header {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    padding: 0 0.5em;
+}
+
+.recipe-title {
+    background-color: #cc9543;
+    padding: 0 5.5em 0 3em;
+    margin: 0;
+}
+
+.recipe-title h1 {
+    font-size: 2.5em;
+}
+
+@media all and (max-width: 62em) { 
+    .recipe-header {
+        padding: 0 0.5em;
+    }
+    .recipe-title {
+        padding: 0 3em 0 2em;
+    }
+    .recipe-title h1 {
+        font-size: 2em;
+    }
+}
+
+/* Recipe Image */
+.recipe-image {
+    width: 100%;
+    min-height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.recipe-img-1 {
+    background-image: url('images/cilbir.jpeg');
+}
+
+.recipe-img-2 {
+    background-image: url('images/borek.jpeg');
+}
+
+.recipe-img-3 {
+    background-image: url('images/baklava.jpeg');
+}
+
+.recipe-body {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 1.125em;
+}
+
+/* Description */
+.description {
+    flex: 100%;
+    padding: 0.5em 2em;
+    margin: 1em 1.5em 0.5em 1.5em;
+    border: 2px solid rgb(12, 10, 14);
+}
+
+@media all and (max-width: 62em) { 
+    .description {
+        margin: 0.5em;
+        border: transparent;
+        border-top: 2px solid rgb(12, 10, 14);
+    }
+}
+
+/* Ingredients */
+.ingredients {
+    flex: 1;
+    padding: 2em;
+    margin: 0.5em 1em 1em 1.5em;
+    border: 2px solid rgb(12, 10, 14);
+    position: relative;
+}
+
+.ingredients::after {
+    content: '';
+    background-color: #cc9543;
+    position: absolute;
+    right: 1em;
+    top: 0.5em;
+    left: -1em;
+    bottom: 0.5em;
+    z-index: -1;
+}
+
+@media all and (max-width: 62em) { 
+    .ingredients {
+        flex: 100%;
+        margin: 0.5em 0.5em 0em 0.5em;
+        border: transparent;
+        border-top: 2px solid rgb(12, 10, 14);
+        border-bottom: 2px solid rgb(12, 10, 14);
+    }
+    .ingredients::after { 
+        right: 0;
+        left: 0;
+    }
+}
+
+/* Recipe information */
+.recipe-info {
+    display: flex;
+}
+
+.recipe-info div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 1.2em;
+}
+
+@media all and (max-width: 62em) {
+    .recipe-info div {
+        margin: 0 1em;
+    }
+}
+
+.recipe-info div:nth-child(1) {
+    margin-left: 0;
+}
+
+.recipe-info div i {
+    font-size: 2em;
+}
+
+.recipe-info div span {
+    font-size: 0.9em;
+}
+
+/* Recipe content (steps and resource) */
+.recipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 2;
+    margin: 0.5em 1.5em 1em 0em;
+    border: 2px solid rgb(12, 10, 14);
+    padding: 0.5em 2em;
+}
+
+@media all and (max-width: 62em) { 
+    .recipe {
+        margin: 0.5em 0.5em 1em 0.5em;
+        border: transparent;
+    }
+}
+
+.link p a:visited {
+    color: #855713;
+}
+
+/* Homepage & Next recipe buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em 0 2em 0;
+}
+ 
+@media all and (max-width: 62em) {  
+    .buttons {
+        padding: 2em 0;
+    }
+}
+
+.buttons button {
+    background-color: transparent;
+    font-family: 'KoHo', sans-serif;
+    border: none;
+    transition: all 300ms;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+}
+
+.buttons button a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.buttons button a:hover {
+    background: linear-gradient(transparent 70%, #cc9543b7 30%);
+}
