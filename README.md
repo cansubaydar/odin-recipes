@@ -29,3 +29,5 @@ Recipes and Images by [Chef John](https://www.allrecipes.com/cook/foodwisheswith
 
 
 Update: Added CSS file and made it responsive.
+
+Live preview is [here](https://cansubaydar.github.io/odin-recipes/)
