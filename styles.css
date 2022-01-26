@@ -5,6 +5,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     font-family: 'KoHo', sans-serif;
     margin: 0;
     padding: 0;
@@ -18,7 +21,7 @@ a {
 /* Homepage */
 .home {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +57,7 @@ a {
     z-index: -1;
 }
 
-.home ul li { 
+.home li { 
     list-style: none;
     font-size: 1.3em;
     padding: 1.5em 0;
@@ -72,18 +75,18 @@ a {
     .home ul::before {
         display: none;
     }
-    .home ul li {
+    .home li {
         text-align: center;
         padding: 1em 0;
         font-size: 1.1em;
     }
 }
 
-.home ul li a {
+.home li a {
     text-decoration: none;
 }
 
-.home ul li a:hover {
+.home li a:hover {
     color: #855713;
 }
 
@@ -260,22 +263,40 @@ a {
     }
 }
 
-.buttons button {
+button {
     background-color: transparent;
     font-family: 'KoHo', sans-serif;
     border: none;
     transition: all 300ms;
 }
 
-.buttons button:hover {
+button:hover {
     transform: scale(1.1);
 }
 
-.buttons button a {
+button a {
     text-decoration: none;
     font-size: 18px;
 }
 
-.buttons button a:hover {
+button a:hover {
     background: linear-gradient(transparent 70%, #cc9543b7 30%);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0.5em 1em 0.5em;
+    background-color: #cc9543;
+    margin-top: auto;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.fab {
+    color: rgb(12, 10, 14);
+    font-size: 1.1em;
+    padding: 0 0.2em 0 0.5em;
 }
